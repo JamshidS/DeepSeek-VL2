@@ -53,7 +53,7 @@
   <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#6-citation"><b>📖 Citation</b></a> <br>
   <a href="./DeepSeek_VL2_paper.pdf"><b>📄 Paper Link</b></a> |
   <a href="https://arxiv.org/abs/2412.10302"><b>📄 Arxiv Paper Link</b></a> |
-  <a href=""><b>👁️ Demo</b></a>
+  <a href="https://huggingface.co/spaces/deepseek-ai/deepseek-vl2-small"><b>👁️ Demo</b></a>
 </p>
 
 ## 1. Introduction
