@@ -270,7 +270,7 @@ def pil_to_base64(
 def parse_ref_bbox(response, image: Image.Image):
     try:
         image = image.copy()
-        image_h, image_w = image.size
+        image_w, image_h = image.size
         draw = ImageDraw.Draw(image)
 
         ref = re.findall(r'<\|ref\|>.*?<\|/ref\|>', response)
@@ -291,10 +291,10 @@ def parse_ref_bbox(response, image: Image.Image):
 
         for indice, (box, label) in enumerate(zip(boxes, labels)):
             box = (
-                int(box[0] / 999 * image_h),
-                int(box[1] / 999 * image_w),
-                int(box[2] / 999 * image_h),
-                int(box[3] / 999 * image_w),
+                int(box[0] / 999 * image_w),
+                int(box[1] / 999 * image_h),
+                int(box[2] / 999 * image_w),
+                int(box[3] / 999 * image_h),
             )
 
             box_color = BOX2COLOR[indice % len(BOX2COLOR.keys())]

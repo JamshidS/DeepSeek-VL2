@@ -335,6 +335,9 @@ This is image_3: <image>
 <|Assistant|>: The first image contains carrots. The second image contains corn. The third image contains meat.<｜end▁of▁sentence｜>
 ```
 
+Parse the bounding box coordinates, please refer to [parse_ref_bbox](https://github.com/deepseek-ai/DeepSeek-VL2/blob/main/deepseek_vl2/serve/app_modules/utils.py#L270-L298).
+
+
 ### Full Inference Example
 ```shell
 # without incremental prefilling
